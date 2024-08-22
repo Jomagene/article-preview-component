@@ -1,0 +1,9 @@
+@use "variables" as *;
+
+@media (min-width: 48rem) {
+  h1 {
+    line-height: 1.4;
+    font-size: $font-heading-desktop;
+    font-weight: 900;
+  }
+}

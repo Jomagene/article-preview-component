@@ -5,4 +5,4 @@
 /figma/
 *.css
 *.css.map
-!styles/style.css
+!styles/index.css

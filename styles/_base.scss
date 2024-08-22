@@ -1,0 +1,24 @@
+@use "variables" as *;
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: $font-paragraph;
+  font-weight: 500;
+  background-color: $light-grayish-blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 41.6875rem;
+
+  p {
+    line-height: calc(20 / 13);
+    letter-spacing: calc(0.12 / 13 * 1em);
+    color: $desaturated-dark-blue;
+  }
+  h1 {
+    line-height: 1.5;
+    letter-spacing: 0.0125em;
+    font-size: $font-heading-mobile;
+    font-weight: 900;
+    color: $very-dark-grayish-blue;
+  }
+}

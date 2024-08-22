@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 41.6875rem;
+}
+body p {
+  line-height: 1.5384615385;
+  letter-spacing: 0.0092307692em;
+  color: hsl(214, 17%, 51%);
+}
+body h1 {
+  line-height: 1.5;
+  letter-spacing: 0.0125em;
+  font-size: 1rem;
+  font-weight: 900;
+  color: hsl(217, 19%, 35%);
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    line-height: 1.4;
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+}
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  max-width: 20.4375rem;
+  background-color: white;
+}
+article > figure {
+  height: 12.5rem;
+  overflow: hidden;
+}
+article > figure img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+article section {
+  padding: 2rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+article section hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+article section > figure {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+article section > figure > img {
+  height: 2.5rem;
+  border-radius: 5rem;
+}
+article section > figure .name {
+  font-weight: 900;
+}/*# sourceMappingURL=index.css.map */
