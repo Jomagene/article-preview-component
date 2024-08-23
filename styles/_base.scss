@@ -22,7 +22,7 @@ body {
     font-weight: 700;
     color: $very-dark-grayish-blue;
   }
-  .icon-container {
+  .share-icon-container {
     height: 2rem;
     width: 2rem;
     background-color: $light-grayish-blue;
@@ -31,5 +31,30 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .tooltip {
+    background-color: $very-dark-grayish-blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+    padding: 2rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+
+    .social-links {
+      display: flex;
+      justify-content: space-between;
+      width: 10.9375rem;
+    }
+
+    p {
+      letter-spacing: 0.3125rem;
+    }
+
+    .share-icon-container {
+      background-color: $desaturated-dark-blue;
+      color: white;
+    }
   }
 }

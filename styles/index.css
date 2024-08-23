@@ -62,7 +62,7 @@ body h1 {
   font-weight: 700;
   color: hsl(217, 19%, 35%);
 }
-body .icon-container {
+body .share-icon-container {
   height: 2rem;
   width: 2rem;
   background-color: hsl(210, 46%, 95%);
@@ -72,17 +72,38 @@ body .icon-container {
   align-items: center;
   justify-content: center;
 }
+body .tooltip {
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rem;
+  padding: 2rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+}
+body .tooltip .social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 10.9375rem;
+}
+body .tooltip p {
+  letter-spacing: 0.3125rem;
+}
+body .tooltip .share-icon-container {
+  background-color: hsl(214, 17%, 51%);
+  color: white;
+}
 
 article {
   display: flex;
   flex-direction: column;
-  border-radius: 0.625rem;
-  overflow: hidden;
   max-width: 20.4375rem;
-  background-color: white;
+  position: relative;
 }
 article > figure {
   overflow: hidden;
+  border-radius: 0.625rem 0.625rem 0 0;
   max-height: 12.5rem;
   flex: 200;
 }
@@ -96,10 +117,13 @@ article > figure img {
 }
 article section {
   padding: 2rem 2rem 1.5rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 1.1875rem;
   flex: 312;
+  background-color: white;
 }
 article section hgroup {
   display: flex;
@@ -124,7 +148,7 @@ article section figure .name {
   font-weight: 700;
 }
 
-@media (min-width: 48rem) {
+@media (min-width: 55rem) {
   body {
     min-height: 50rem;
   }
@@ -136,6 +160,8 @@ article section figure .name {
   article > figure {
     flex: 1 1 39.04%;
     max-height: 100%;
+    overflow: hidden;
+    border-radius: 0.625rem 0 0 0.625rem;
   }
   article > figure img {
     -o-object-position: left;
@@ -144,9 +170,25 @@ article section figure .name {
   article > section {
     flex: 1 1 60.96%;
     padding: 2.0625rem 2.5rem;
+    border-radius: 0 0.625rem 0.625rem 0;
   }
   article > section h1 {
     line-height: 1.4;
     font-size: 1.25rem;
+  }
+  body .tooltip {
+    position: absolute;
+    bottom: 5.5rem;
+    left: 34.345rem;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    height: 3.4375rem;
+    width: 15.5rem;
+  }
+  body .tooltip .social-links {
+    justify-content: space-between;
+  }
+  body .tooltip .share-icon-container {
+    display: none;
   }
 }/*# sourceMappingURL=index.css.map */

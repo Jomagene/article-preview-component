@@ -1,13 +1,13 @@
 article {
   display: flex;
   flex-direction: column;
-  border-radius: 0.625rem;
-  overflow: hidden;
   max-width: 20.4375rem;
-  background-color: white;
+  position: relative;
 
   > figure {
     overflow: hidden;
+    border-radius: 0.625rem 0.625rem 0 0;
+
     max-height: 12.5rem;
     flex: 200;
     img {
@@ -20,16 +20,20 @@ article {
 
   section {
     padding: 2rem 2rem 1.5rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 1.1875rem;
     flex: 312;
+    background-color: white;
 
     hgroup {
       display: flex;
       flex-direction: column;
       gap: 0.625rem;
     }
+
     div {
       display: flex;
       justify-content: space-between;

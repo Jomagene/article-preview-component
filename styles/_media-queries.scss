@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-@media (min-width: 48rem) {
+@media (min-width: 55rem) {
   body {
     min-height: 50rem;
   }
@@ -8,9 +8,12 @@
     flex-direction: row;
     max-width: 45.625rem;
     max-height: 17.5rem;
+
     > figure {
       flex: 1 1 39.04%;
       max-height: 100%;
+      overflow: hidden;
+      border-radius: 0.625rem 0 0 0.625rem;
       img {
         object-position: left;
       }
@@ -18,9 +21,31 @@
     > section {
       flex: 1 1 60.96%;
       padding: 2.0625rem 2.5rem;
+      border-radius: 0 0.625rem 0.625rem 0;
+
       h1 {
         line-height: 1.4;
         font-size: $font-heading-desktop;
+      }
+    }
+  }
+
+  body {
+    .tooltip {
+      position: absolute;
+      bottom: 5.5rem;
+      left: 34.345rem;
+      padding: 2rem;
+      border-radius: 0.625rem;
+      height: 3.4375rem;
+      width: 15.5rem;
+
+      .social-links {
+        justify-content: space-between;
+      }
+
+      .share-icon-container {
+        display: none;
       }
     }
   }
