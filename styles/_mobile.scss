@@ -34,10 +34,15 @@ article {
       gap: 0.625rem;
     }
 
-    div {
+    > div {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .tooltip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     figure {
       display: flex;

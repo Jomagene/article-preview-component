@@ -4,6 +4,7 @@
   body {
     min-height: 50rem;
   }
+
   article {
     flex-direction: row;
     max-width: 45.625rem;
@@ -28,25 +29,30 @@
         font-size: $font-heading-desktop;
       }
     }
-  }
-
-  body {
     .tooltip {
       position: absolute;
-      bottom: 5.5rem;
+      bottom: 6rem;
       left: 34.345rem;
-      padding: 2rem;
+      padding: 0 2rem;
       border-radius: 0.625rem;
       height: 3.4375rem;
       width: 15.5rem;
+      justify-content: center;
 
       .social-links {
         justify-content: space-between;
       }
-
       .share-icon-container {
         display: none;
       }
     }
   }
+}
+
+.triangle {
+  position: absolute;
+  width: 1.5rem;
+  bottom: -1.35rem;
+  left: 6.875rem;
+  fill: hsl(217, 19%, 35%);
 }

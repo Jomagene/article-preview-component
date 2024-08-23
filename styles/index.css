@@ -85,10 +85,14 @@ body .tooltip {
 body .tooltip .social-links {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 10.9375rem;
+  padding-left: 0.5rem;
 }
 body .tooltip p {
   letter-spacing: 0.3125rem;
+  color: hsl(212, 23%, 69%);
+  font-size: 0.8125rem;
 }
 body .tooltip .share-icon-container {
   background-color: hsl(214, 17%, 51%);
@@ -130,10 +134,15 @@ article section hgroup {
   flex-direction: column;
   gap: 0.625rem;
 }
-article section div {
+article section > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+article section .tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 article section figure {
   display: flex;
@@ -176,19 +185,27 @@ article section figure .name {
     line-height: 1.4;
     font-size: 1.25rem;
   }
-  body .tooltip {
+  article .tooltip {
     position: absolute;
-    bottom: 5.5rem;
+    bottom: 6rem;
     left: 34.345rem;
-    padding: 2rem;
+    padding: 0 2rem;
     border-radius: 0.625rem;
     height: 3.4375rem;
     width: 15.5rem;
+    justify-content: center;
   }
-  body .tooltip .social-links {
+  article .tooltip .social-links {
     justify-content: space-between;
   }
-  body .tooltip .share-icon-container {
+  article .tooltip .share-icon-container {
     display: none;
   }
+}
+.triangle {
+  position: absolute;
+  width: 1.5rem;
+  bottom: -1.35rem;
+  left: 6.875rem;
+  fill: hsl(217, 19%, 35%);
 }/*# sourceMappingURL=index.css.map */

@@ -45,11 +45,15 @@ body {
     .social-links {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 10.9375rem;
+      padding-left: 0.5rem;
     }
 
     p {
       letter-spacing: 0.3125rem;
+      color: $grayish-blue;
+      font-size: $font-paragraph;
     }
 
     .share-icon-container {
