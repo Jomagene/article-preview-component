@@ -24,6 +24,6 @@ const facebook = socials[1];
 const twitter = socials[2];
 const pinterest = socials[3];
 
-facebook.href = `http://www.facebook.com/share.php?u=${link}`;
-twitter.href = `http://www.twitter.com/share.php?&url=${link}&text=${msg}`;
-pinterest.href = `http://www.pinterest.com/share.php?u=${link}`;
+facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${link}`;
+twitter.href = `https://twitter.com/intent/tweet?text=${msg}&url=${link}`;
+pinterest.href = `https://pinterest.com/pin/create/button/?url=${link}&media=[https://m.media-amazon.com/images/I/71+P1yDyRBL._AC_SX679_.jpg]&description=${title}`;
