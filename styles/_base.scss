@@ -8,6 +8,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 41.6875rem;
+  padding: 0 1.5rem;
 
   p {
     line-height: calc(20 / 13);
@@ -18,7 +19,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.0125em;
     font-size: $font-heading-mobile;
-    font-weight: 900;
+    font-weight: 700;
     color: $very-dark-grayish-blue;
   }
 }

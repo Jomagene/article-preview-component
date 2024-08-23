@@ -1,9 +1,27 @@
 @use "variables" as *;
 
 @media (min-width: 48rem) {
-  h1 {
-    line-height: 1.4;
-    font-size: $font-heading-desktop;
-    font-weight: 900;
+  body {
+    min-height: 50rem;
+  }
+  article {
+    flex-direction: row;
+    max-width: 45.625rem;
+    max-height: 17.5rem;
+    > figure {
+      flex: 1 1 39.04%;
+      max-height: 100%;
+      img {
+        object-position: left;
+      }
+    }
+    > section {
+      flex: 1 1 60.96%;
+      padding: 2.0625rem 2.5rem;
+      h1 {
+        line-height: 1.4;
+        font-size: $font-heading-desktop;
+      }
+    }
   }
 }

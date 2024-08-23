@@ -1,0 +1,49 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  max-width: 20.4375rem;
+  background-color: white;
+
+  > figure {
+    overflow: hidden;
+    max-height: 12.5rem;
+    flex: 200;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+  }
+
+  section {
+    padding: 2rem 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1875rem;
+    flex: 312;
+
+    hgroup {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    > figure {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      > img {
+        height: 2.5rem;
+        border-radius: 5rem;
+      }
+
+      .name {
+        font-weight: 700;
+      }
+    }
+  }
+}
