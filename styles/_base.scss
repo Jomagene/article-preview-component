@@ -22,4 +22,14 @@ body {
     font-weight: 700;
     color: $very-dark-grayish-blue;
   }
+  .icon-container {
+    height: 2rem;
+    width: 2rem;
+    background-color: $grayish-blue;
+    color: $very-dark-grayish-blue;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -30,8 +30,12 @@ article {
       flex-direction: column;
       gap: 0.625rem;
     }
-
-    > figure {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    figure {
       display: flex;
       align-items: center;
       gap: 1rem;

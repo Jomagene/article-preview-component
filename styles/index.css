@@ -62,6 +62,16 @@ body h1 {
   font-weight: 700;
   color: hsl(217, 19%, 35%);
 }
+body .icon-container {
+  height: 2rem;
+  width: 2rem;
+  background-color: hsl(212, 23%, 69%);
+  color: hsl(217, 19%, 35%);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 article {
   display: flex;
@@ -96,16 +106,21 @@ article section hgroup {
   flex-direction: column;
   gap: 0.625rem;
 }
-article section > figure {
+article section div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+article section figure {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-article section > figure > img {
+article section figure > img {
   height: 2.5rem;
   border-radius: 5rem;
 }
-article section > figure .name {
+article section figure .name {
   font-weight: 700;
 }
 
