@@ -70,3 +70,13 @@ body {
   background-color: $desaturated-dark-blue;
   color: white;
 }
+
+.share-icon-container,
+.social {
+  &:hover {
+    border-radius: 1rem;
+    cursor: pointer;
+    background-color: $desaturated-dark-blue;
+    color: white;
+  }
+}

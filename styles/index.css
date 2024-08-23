@@ -108,6 +108,14 @@ body .tooltip .share-icon-container {
   color: white;
 }
 
+.share-icon-container:hover,
+.social:hover {
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: hsl(214, 17%, 51%);
+  color: white;
+}
+
 article {
   display: flex;
   flex-direction: column;
