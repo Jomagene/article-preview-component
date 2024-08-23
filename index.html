@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A responsive testimonial grid built with CSS Grid and flex-box, semantic HTML, and Sass/SCSS. Designed to adapt across devices with clean, maintainable code." />
+      content="A responsive share link component built with flex-box, semantic HTML, and Sass/SCSS and vanilla Javascript. Designed to adapt across devices with clean, maintainable code." />
     <link
       rel="icon"
       type="image/png"
@@ -38,13 +38,19 @@
         </hgroup>
         <div>
           <figure>
-            <img src="./images/avatar-michelle.jpg" alt="avatar Michelle" />
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Portrait of Michelle Appleton" />
             <figcaption>
               <p class="name">Michelle Appleton</p>
               <p>28 Jun 2020</p>
             </figcaption>
           </figure>
-          <div class="share-icon-container">
+          <div
+            class="share-icon-container"
+            role="button"
+            tabindex="0"
+            aria-label="Share this article">
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
               <path
                 fill="currentColor"
@@ -55,7 +61,7 @@
           <div class="tooltip hidden" id="tooltip">
             <div class="social-links">
               <p>SHARE</p>
-              <a href="" target="_blank">
+              <a href="#" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -66,7 +72,7 @@
                     d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
                 </svg>
               </a>
-              <a href="" target="_blank">
+              <a href="#" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -77,7 +83,7 @@
                     d="M20 2.172a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.804-2.27 8.22 8.22 0 01-2.605.996A4.096 4.096 0 0013.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 011.392 1a4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.849A8.25 8.25 0 010 14.658a11.616 11.616 0 006.29 1.843c7.618 0 11.922-6.434 11.663-12.205A8.354 8.354 0 0020 2.172z" />
                 </svg>
               </a>
-              <a href="" target="_blank">
+              <a href="#" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
