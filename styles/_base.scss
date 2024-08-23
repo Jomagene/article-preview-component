@@ -63,6 +63,10 @@ body {
   }
 }
 
-.hidden {
-  display: none !important;
+.tooltip.hidden {
+  display: none;
+}
+.share-icon-container.active {
+  background-color: $desaturated-dark-blue;
+  color: white;
 }

@@ -99,8 +99,13 @@ body .tooltip .share-icon-container {
   color: white;
 }
 
-.hidden {
-  display: none !important;
+.tooltip.hidden {
+  display: none;
+}
+
+.share-icon-container.active {
+  background-color: hsl(214, 17%, 51%);
+  color: white;
 }
 
 article {
@@ -147,6 +152,9 @@ article section .tooltip {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+article section .triangle {
+  display: none;
 }
 article section figure {
   display: flex;
@@ -204,6 +212,9 @@ article section figure .name {
   }
   article .tooltip .share-icon-container {
     display: none;
+  }
+  article .tooltip .triangle {
+    display: block;
   }
 }
 .triangle {
