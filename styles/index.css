@@ -50,6 +50,10 @@ body {
   min-height: 41.6875rem;
   padding: 0 1.5rem;
 }
+body main {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  border-radius: 0.625rem;
+}
 body p {
   line-height: 1.5384615385;
   letter-spacing: 0.0092307692em;
