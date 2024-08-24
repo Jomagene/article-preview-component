@@ -26,4 +26,6 @@ const pinterest = socials[3];
 
 facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${link}`;
 twitter.href = `https://twitter.com/intent/tweet?text=${msg}&url=${link}`;
-pinterest.href = `https://pinterest.com/pin/create/button/?url=${link}&media=[https://m.media-amazon.com/images/I/71+P1yDyRBL._AC_SX679_.jpg]&description=${title}`;
+pinterest.href = `https://pinterest.com/pin/create/button/?url=${link}&media=${encodeURIComponent(
+  "https://m.media-amazon.com/images/I/71+P1yDyRBL._AC_SX679_.jpg"
+)}&description=${title}`;

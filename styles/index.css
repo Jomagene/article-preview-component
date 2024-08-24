@@ -146,15 +146,15 @@ article section {
   flex: 312;
   background-color: white;
 }
-article section hgroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-}
 article section > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+article section .hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
 article section .tooltip {
   display: flex;

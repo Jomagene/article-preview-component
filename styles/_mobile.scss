@@ -28,16 +28,15 @@ article {
     flex: 312;
     background-color: white;
 
-    hgroup {
-      display: flex;
-      flex-direction: column;
-      gap: 0.625rem;
-    }
-
     > div {
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+    .hgroup {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
     }
     .tooltip {
       display: flex;
